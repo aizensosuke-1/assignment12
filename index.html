@@ -4,278 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <!-- Properly embedding font -->
     <style>
         @font-face {
             font-family: "epaomayek";
             src: url("EPAOMAYEK.ttf") format("truetype");
         }
 
-        body{
-             font-family: "epaomayek";
+        body {
+            font-family: "epaomayek", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-            
-    nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color:rgb(105, 100, 100);
-}
 
-nav li {
-    float: left;
-    padding-left: 300px;
-   
-}
-
-nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-nav li a:hover {
-    background-color: #111;
-   
-}
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropdown-btn {
-    font-size: 50px;
-    border: none;
-    outline: none;
-    color: rgb(22, 5, 5);
-    padding: 14px 16px;
-    background-color: inherit;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    font-size: 40px;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropdown-btn {
-    background-color: #111;
-}
-#se{
-    margin-left: 350px;
-}
-main{
-    display: flex;
-}
-       
-        .wareng{
-            float: left;
-            width: 50%;
-            height:auto;
-           
-            border-right: 1px solid black;
-            padding: 50px;
-        }
-        .seireng{
-            float: left;
-            width: 50%;
-            height: auto;
-           
-            border-left: 1px solid black;
-            padding: 50px;
-        }
-        .page1{
-            border: 1px solid black;
-            height: auto;
-            border-radius: 10px;
-            padding: 20px;
-            padding-top: none;
-        }
-        .page2{
-            border: 1px solid black;
-            height: auto;
-            border-radius: 10px;
-            padding: 20px;
-            padding-top: none;
-        }
-        h1{
-            background-color: gray;
-            font-size: 50px;
-        }
-        .person{
-            border: 1px solid black;
-            font-size: 30px;
-            padding: 5px;
-            text-align: center;
-        }
-        .warengeba{
-            padding: 5px;
-            font-size: 30px;
-        }
-        .seirengeba{
-            padding: 5px;
-            font-size: 30px;
-        }
-        img{
-            margin-top: 20px;
-        }
-        footer{
-            background-color:lightgreen;
-            color: black;
-            font-size: 30px;
-            font-family:'Courier New', Courier, monospace;
-            padding: 50px;
-            color: rgb(8, 3, 68);
-            border: 2px solid black;
-            border-top: none;
-            text-align: center;
-        }
-        .foot{
-            display: flex;
-            overflow: hidden;
-          
-        }
-        .foot li{
+        nav ul {
             list-style-type: none;
-            padding-left: 300px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: rgb(105, 100, 100);
+        }
+
+        nav li {
+            padding: 10px 20px;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .section {
+            width: 45%;
+            background: white;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        h1 {
+            background-color: gray;
+            text-align: center;
+            font-size: 50px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: lightgreen;
+            font-size: 20px;
+            border-top: 2px solid black;
         }
     </style>
 </head>
 <body>
-    <font face="epaomayek">
+
     <nav>
-    <ul>
-        <li class="dropdown">
-            <a href="#" class="dropdown-btn">wareH</a>
-            <div class="dropdown-content">
-                <a href="#wahong">wahoH</a>
-            </div>
-        </li>
-        <li class="dropdown" id="se">
-            <a href="#" class="dropdown-btn">sEreH</a>
-            <div class="dropdown-content">
-                <a href="#wahH ?">wahH ?</a>
-                <a href="#Akiba">Akiba</a>
-            </div>
-        </li>
-    </ul>
-    </nav><br><br>
+        <ul>
+            <li class="dropdown">
+                <a href="#">wareH</a>
+                <div class="dropdown-content">
+                    <a href="#wahong">wahoH</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">sEreH</a>
+                <div class="dropdown-content">
+                    <a href="#wahH">wahH ?</a>
+                    <a href="#Akiba">Akiba</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
     <main>
-        <div class="wareng">
-            <div class="page1" id="wahong">
-                <center><h1>wahoH</h1></center>
-                <div class="person">
-                    puQniH hun, ciH leMn, s_rilqka/ Aesiya/ seNtimitr, wagoQ Ta,<br>
-                    ZMThLli, caQtamiNnE
-                </div>
-               
-                <div class="warengeba">
-                    <p>wahoH haIbsi varYki furuPki UceQni| wahoHlabn mmEgi mtu fNdoQtun lePpdi puQniH hun fjE| K_waIdgi heNn ciH-leMn fjb UceQni haIdun wa- hoHbu furuPki UceQ AoIn lOribini| </p>
-                    <p>wahoHgi hOrQfMdi s_rilqka| varY AmsuH ka-noHpoQ Aesiyani hOjiQ ti maleMgi mfM puMnmQt wahoH lEre| wahoH mKL Ani lE Amn higoQ mcu<br>gi wahoHni Amn Asqb mcugi wahoHni| mKL AnimQki wahoH wahoH labgi msan seNtimitr 75 roM siHI| wahoH labgi fjrb mtoQ paLli|</p>
-                    <p>wahoH labgi mmEd AsaHb fjrb mtu PaLli| cagoQ Tad wahoH labn fjrb mmEgi mtusiH Adu fNdoQtun Utli| fNdoQp mmEdu mkoQloMd ZMThLli| Adug yamn leMn mKoH tPn-tPn TaHdun mmEgi mtusiH Adu niQI| mtusiH Adu Amg Amg TeHnbgi mKoL tAb fqI| Adudgi wahoH labn mKoL piQ- lPn yaMn KoHI|</p>
-                    <p>wahoH AmoMn labdgi Kr piQI| wahoH AmoMgi mcudi Asqbg noHgObi mcug yaNnE| wahoH AmoMgi mtoQ paNde, mmEsu teNtQ tOI| wahoH AmoMn AmuQt mruM mridgi nipaL faUb koQI|</p>
-                    <p>wahoHn AneMb Umqd lE| AyuQ-nuHTiL mKoIn puNn caQtamiNnE Adug A hiHd AwaHb Ud toHdun lE|</p>
-                    <p>wahoHn paMbi mca AmsuH TwaIpaNb mca cadun hiHI| KarOnciHb liN- siH yaMn paMn caI|
-                </div>
-                <hr width="80%" align="center" color="gray" size="3px"><br><br><br><br><br>
-            </div>
-            
+        <div class="section" id="wahong">
+            <h1>wahoH</h1>
+            <p>Content about wahoH goes here...</p>
         </div>
-        <div class="seireng">
-            <div class="page1" id="wahH ?">
-                <center><h1>wahH ?</h1>
-                       
-                <div class="seirengeba">
-                <br>
-                paUKuM fHdraba AEgi wahHse <br>
-                niLli mlHda KoNTaH jEna <br>
-                miYlu piraHna KoHloI AoIhOre <br>
-                nuHsiruba AEtagi IraLla ? <br>
-                kaIna mEsana mEwaIhOre <br>
-                Tjaruba TamoIgi maraLla ? <br>
-                ZaIbna puNsigi pNTuH AoIhOre <br>
-                karigi nTEduna cYKriba ? <br>
-                
-                puNsugi KoHcYni KNjaruba IdoM <br>
-                kaAoToQnba hoYnE IroLnuHda luPtuna <br>
-                TaHdoQKraba nhaQki ArePpa KoHTaHdo <br>
-                AoIrasnu yeLniHTa nhaQki puNsi <br>
-                
-                huMjLlQKiba waQciHgi UleNna nfMda <br>
-                AkHba pameLguM lePtuna nadoM <br>
-                taHjafM lEtraba UriguM naItoM <br>
-                ZaIriZE yeLniHTa nhaQki puNsina <br>
-                
-                AoIrare AEgisu nakeNTa <br>
-                hHli wahH Zasisu <br>
-                paAoKuM paAoKuMbinba lEte KHna KHna <br>
-                nuHsiruba AEtagi IraLla ?
-            </div><br><br>
-            <hr width="80%" align="center" color="gray" size="3px"><br><br><br><br><br>
-            </center>
-            </div><br><br><br>
-            <div class="page1" id="Akiba">
-                <center><h1>Akiba</h1>
-                        
-                <div class="seirengeba">
-                <br>
-                mHlaQngni kibn <br>
-                AhiHsi tuMb ZMdre <br>
-                Kudi Tigni kibn <br>
-                KoH TaHb ZMdre <br>
-                sor fuNgni kibn <br>
-                sor hoNb ZMdre <br>
-                noHmdi sirgni kibn <br>
-                AE hiHb ZMloIdOre|
-            </div><br><br>
-            <hr width="80%" align="center" color="grey" size="3px"><br><br><br><br><br>
-            </center>
-            </div>
-            
+        
+        <div class="section" id="wahH">
+            <h1>wahH ?</h1>
+            <p>Content about wahH goes here...</p>
+        </div>
+        
+        <div class="section" id="Akiba">
+            <h1>Akiba</h1>
+            <p>Content about Akiba goes here...</p>
         </div>
     </main>
-</font>
-    <footer>
-        <ul class="foot">
 
-        <li>
-        <font face="epaomayek">
-            
-                  <br>
-                keviN IruHbM <br>
-                bi.si.Ae 4sub semist_r<br>
-                roL nMb_r :-bi.si. 2050
-        </font> </li><br><br>
-        <li><b> <br>
-            KEVIN IRUNGBAM <br>
-            BCA 4th Sem <br>
-            Roll no:-BC2050
-            </b>  </li>  <br><br>
-        </ul>
+    <footer>
+        <p>KEVIN IRUNGBAM | BCA 4th Sem | Roll no: BC2050</p>
     </footer>
 
 </body>
 </html>
-   
